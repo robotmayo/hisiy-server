@@ -1,0 +1,19 @@
+{
+  "name": "have-i-seen-it-yet",
+  "version": "0.0.0",
+  "description": "Have I seen it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "robotmayo",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^6.1.0",
+    "monk": "^0.9.0",
+    "tmdb-node": "^0.8.0"
+  },
+  "devDependencies": {
+    "tape": "^2.13.3"
+  }
+}
