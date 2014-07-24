@@ -3,9 +3,8 @@ var Hapi = require('hapi')
 ,   config = require('../config.js')
 ,   server
 
-function setup(port,fn){
-    server = new Hapi.Server(port || config.port)
+module.exports = function setup(port,fn){
+    server = new Hapi.Server(port || config.port, {cors : true})
     routes(server)
-    server.start(fn)
     return server
 }
