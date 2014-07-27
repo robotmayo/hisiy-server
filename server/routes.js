@@ -10,7 +10,7 @@ module.exports = function(server){
 	server.route(hapiRoute("GET","/list", getMediaList))
 	server.route(hapiRoute("GET", "/seen", getSeenMedia))
 	server.route(hapiRoute("GET", "/unseen", getUnseenMedia))
-
+	
 	// Auth/Admin
 	adminRoutes(server)
 

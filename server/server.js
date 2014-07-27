@@ -4,8 +4,7 @@ var Hapi = require('hapi')
 ,   server
 
 module.exports = function setup(port,fn){
-    server = new Hapi.Server(port || config.port, {cors : true})
-    console.log(server._router)
+    server = new Hapi.Server('localhost', port || config.port, {cors : true})
     routes(server)
     return server
 }

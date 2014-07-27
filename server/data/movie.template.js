@@ -1,6 +1,7 @@
 module.exports = {
 	title : "",
-	synopsis : "",
+	overview : "",
+	tagline : "",
 	releaseDate : "", //YYYY-MM-DD
 	nowPlaying : false,
 	seen : false,
@@ -8,8 +9,8 @@ module.exports = {
 	genres : [], // ["Action", "Drama"]
 	tags : [], // ["giant robots", "explosions"]
 	review : {}, // {body :"Herp", score : 2}
-	poster : "",
-	backdrop : "",
+	posters : {small : '', medium : '', large : ''},
+	backdrops : {small : '', medium : '', large : ''},
 	watchedOn : "",
 	addedOn : ""
 }
